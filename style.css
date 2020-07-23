@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans'), url('ProductSans-Regular.woff') format('woff');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Product Sans;
+  background-color: #24252a;
+}
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.body {
+  -ms-overflow-style: none;
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.nav li {
+    float: right;
+    display: inline;
+    text-decoration: none;
+}
+.logo {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fc730b;
+    letter-spacing: .7px;
+    line-height: 55px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 20px;
+    float: left;
+}
+.nav a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 5px 18px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border: ;
+    color: antiquewhite;
+}
+.nav a:hover {
+    background-color: #fc730b;
+    color: white;
+    border-radius: 15px;
+    transition: all 0.5s ;
+}
+.nav a.active {
+    background-color: #fc730b;
+    color: whitesmoke;
+}
+.bio {
+    margin-top: calc(20% - 120px);
+    margin-left: calc(7% - 40px);
+}
+.ht{
+    position: relative;
+    color: whitesmoke;
+    font-size: 38px;
+}
+.bion {
+    color: #fc730b;
+    font-size: 42px;
+}
+.mail {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+}
+.em {
+    color: #fc730b;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.4s linear;
+    line-height: 60px !important;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.em:hover {
+    background-color: #fc730b;
+    color: whitesmoke;
+    transform: scale(1.2);
+}
+.social {
+    margin-top: 15px;
+    font-size: 28px;
+    color: #fc730b;
+    display: flex;
+    flex-direction: row;
+}
+#si {
+    /*padding: 1rem;*/
+    width: 60px;
+    height: 60px;
+    color: #fc730b;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.4s linear;
+    line-height: 60px !important;
+}
+#si:hover {
+    background-color: #fc730b;
+    transform: scale(1.2);
+    color: whitesmoke;
+}
+.him a{
+    position: absolute;
+    right: 12%;
+    top: calc(30%);
+    display: inline-block;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+img.dp {
+    width: 100%;
+}
+.him a:hover {
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+
+/* PROJECTS PAGE */
+
+.stitle {
+    text-align: center;
+    color: #fc730b;
+    font-size: 42px;
+    margin-top: 30px;
+    left: calc(10%);
+    margin-bottom: 30px;
+}
+.projects {
+    padding-left: 25%;
+    padding-top: 13%;
+}
+.projects a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 400;
+    transition: 0.5s linear;
+    letter-spacing: .7px;
+    padding: 15px 15px 15px 15px; 
+    margin-top: 10px; 
+    margin-right: 120px;
+    border-radius: 4px 4px 4px 4px;
+    border: 2px solid;
+    border-image-source: linear-gradient(60deg, #fc730b, #ff9100);
+    border-image-slice: 1;
+}
+.projects a:hover {
+    background-image: linear-gradient(to right, #fc730b, #ff9100);
+    color: #24252a;
+    transform: scale(1.2);
+    box-shadow: 5px 7px 8px #ce5d08d8;
+}
+.projects a i {
+    transform: rotate(-45deg);
+}
+
+/* ABOUT PAGE */
+
+.aim a{
+    position: absolute;
+    right: 10%;
+    top: calc(35%);
+    /* display: inline-block; */
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    transition: 0.4s;
+    margin-bottom: 40px;
+}
+img.dp {
+    width: 100%;
+}
+.aim a:hover {
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+.info p{
+    right: 2%;
+    width: 400px;
+    float: right;
+    position: absolute;
+    top: calc(60%);
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: .7px;
+    line-height: 25px;
+    color: whitesmoke;
+    text-align: center;
+}
+.info p a{
+    text-decoration: none;
+    color: #fc730b;
+}
+.sdata{
+    display: flex;
+    width: 200px;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-left: 4%;
+    font-weight: 20px;
+    padding: 2px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #fc730b;
+    transition: 0.3s linear;
+    box-shadow: 0 4px 10px ;
+}
+.sdata:hover {
+    background-color: #fc730b;
+    color: #24252a;
+    transform: scale(1.1);
+}
+.snames img, .snames, .snames p{
+    background-color: transparent;
+}
+.snames{
+    display: flex;
+    align-items: center;
+}
+.snames p{
+    color: white;
+    padding-left: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+table {
+    margin-top: 50px;
+    border-collapse: separate;
+    border-spacing: 100px 15px;
+}
+
+/* Contact Page */
+
+.con {
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.con label, .con p {
+    color: whitesmoke;
+    font-size: 22px;
+}
+.con label input[type="text"], input[type="email"] {
+    border: none;
+    outline: none;
+    background: #ffffff18;
+    width: 250px;
+    font-size: 16px;
+    color: whitesmoke;
+    border: 2px solid #fc730b;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 8px 15px 8px 15px;
+}
+.con textarea {
+    width: 250px;
+    height: 280px;
+    border: none;
+    outline: none;
+    background: #ffffff18;
+    color: whitesmoke;
+    border: 2px solid #fc730b;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    padding: 8px 15px 8px 15px;
+}
+.con button {
+    border: none;
+    outline: none;
+    background: #00000022;
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 10px 35px 10px 35px;
+    border-radius: 10px;
+    border: 2px solid #fc730b;
+    transition: 0.4s linear;
+}
+.con button:hover {
+    color: black;
+    background-color: #fc730b;
+}
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 45%;
+    color: #fc730b;
+}

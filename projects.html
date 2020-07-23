@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/project.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $('#aic').hover(function() {
+                    $('#ic').css('background-color', '#ff9100');
+                    }, function() {
+                    // on mouseout, reset the background colour
+                    $('#ic').css('background-color', ' #24252a');
+                });
+            });
+            $(function() {
+                $('#aic1').hover(function() {
+                    $('#ic1').css('background-color', '#ff9100');
+                    }, function() {
+                    // on mouseout, reset the background colour
+                    $('#ic1').css('background-color', ' #24252a');
+                });
+            });
+            $(function() {
+                $('#aic2').hover(function() {
+                    $('#ic2').css('background-color', '#ff9100');
+                    }, function() {
+                    // on mouseout, reset the background colour
+                    $('#ic2').css('background-color', ' #24252a');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Nataraj</a>
+            <ul class='nav'>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </header>
+        <div class="showcase">
+            <h1 class="stitle">Projects</h1>
+        </div>
+        <div class="projects">
+            <a href="https://web-spoty.firebaseapp.com/" id="aic">Educational Site&nbsp;<i class="fa fa-arrow-right" aria-hidden="true" id="ic"></i></a>
+            <a href="index.html" id="aic1">Portfolio Site(This)&nbsp;<i class="fa fa-arrow-right" aria-hidden="true" id="ic1"></i></a>
+            <a href="https://github.com/NatarajMaddala/Imageclassification" id="aic2">Image Classification&nbsp;<i class="fa fa-arrow-right" aria-hidden="true" id="ic2"></i></a>
+        </div>
+        <footer>
+            &copy; 2020, Nataraj
+        </footer>
+    </body>
+</html>

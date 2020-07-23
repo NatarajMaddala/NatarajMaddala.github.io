@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/icons8-avengers.svg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">Nataraj</a>
+            <ul class='nav'>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </header>
+        <div class="con">
+            <form action="https://formspree.io/mqkywbpa" method="POST">
+                <label>Name: &nbsp;&nbsp;
+                    <input type="text"name="name" placeholder="Name" required>
+                </label><br><br>
+                <label>Email: &nbsp;&nbsp;
+                    <input type="email" inputmode="email" name="_replyto" placeholder="email" required>
+                </label><br><br>
+                <p>Message:&nbsp;</p>
+                 <label><textarea placeholder="Write your message" name="message" required></textarea>
+                </label><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <footer>
+            &copy; 2020, Nataraj
+        </footer>
+    </body>
+</html>
